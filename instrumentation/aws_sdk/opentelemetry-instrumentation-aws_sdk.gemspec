@@ -9,7 +9,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'opentelemetry/instrumentation/aws_sdk/version'
 
 Gem::Specification.new do |spec|
-  spec.name        = 'opentelemetry-instrumentation-aws_sdk'
+  spec.name        = 'aspecto-opentelemetry-instrumentation-aws_sdk'
   spec.version     = OpenTelemetry::Instrumentation::AwsSdk::VERSION
   spec.authors     = ['OpenTelemetry Authors']
   spec.email       = ['cncf-opentelemetry-contributors@lists.cncf.io']
@@ -26,7 +26,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '>= 2.6.0'
 
   spec.add_dependency 'opentelemetry-api', '~> 1.0'
-  spec.add_dependency 'opentelemetry-instrumentation-base', '~> 0.21.0'
+  spec.add_dependency 'opentelemetry-instrumentation-base', '~> 0.19.0'
 
   spec.add_development_dependency 'appraisal', '~> 2.2.0'
   spec.add_development_dependency 'aws-sdk', '>= 2.0'
